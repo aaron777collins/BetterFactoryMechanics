@@ -1,0 +1,51 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "minecraft:cobblestone",
+    "minecraft:deepslate",
+    "minecraft:cobbled_deepslate",
+    "minecraft:gravel",
+
+    "minecraft:granite",
+    "minecraft:diorite",
+    "minecraft:andesite",
+
+    "minecraft:sugar_cane",
+    "minecraft:blaze_rod",
+    "minecraft:breeze_rod",
+    "minecraft:cactus",
+    "minecraft:dripstone_block",
+    "minecraft:gilded_blackstone",
+
+    "minecraft:sandstone",
+    "minecraft:red_sandstone",
+    "minecraft:terracotta",
+    "minecraft:amethyst_block",
+    "minecraft:blackstone",
+    "minecraft:mangrove_roots",
+    "minecraft:clay",
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "minecraft:blue_ice",
+    "minecraft:beetroot",
+    "minecraft:coarse_dirt",
+    "minecraft:honeycomb",
+    "minecraft:glowstone",
+    "minecraft:saddle",
+    "minecraft:amethyst_cluster",
+    "minecraft:bamboo",
+    "minecraft:magma_block",
+    "minecraft:nautilus_shell",
+    "minecraft:bone",
+
+    "minecraft:stone_bricks",
+    "minecraft:deepslate_bricks",
+    "minecraft:deepslate_tiles",
+    "minecraft:nether_bricks",
+    "minecraft:polished_blackstone_bricks",
+    "minecraft:basalt",
+    "minecraft:smooth_basalt",
+    "minecraft:red_nether_bricks"
+  ]
+}

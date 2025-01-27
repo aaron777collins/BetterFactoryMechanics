@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "# #",
+    " i "
+  ],
+  "key": {
+    "#": "minecraft:iron_nugget",
+    "i": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 1,
+    "components": {
+      "minecraft:lore": [
+        "{text: 'Factory Mechanics'}"
+      ],
+      "minecraft:item_model":"minecraft:chute",
+      "minecraft:item_name": "\"Chute\"",
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Silent": 1,
+        "Tags": [
+          "Chute"
+        ],
+        "Fixed": 1,
+        "Invisible": 1
+      }
+    }
+  }
+}

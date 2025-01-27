@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gig",
+    "c c",
+    "cRc"
+  ],
+  "key": {
+    "g": "minecraft:copper_grate",
+    "c": "minecraft:copper_block",
+    "i": "minecraft:iron_ingot",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 1,
+    "components": {
+      "minecraft:lore": [
+        "{text: 'Factory Mechanics'}"
+      ],
+      "minecraft:item_model":"minecraft:copper_fan",
+      "minecraft:item_name": "\"Copper Fan\"",
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Silent": 1,
+        "Tags": [
+          "Fan"
+        ],
+        "Item": {
+          "id": "minecraft:item_frame",
+          "count": 1,
+          "components": {
+            "minecraft:item_model":"minecraft:copper_fan"
+          }
+        },
+        "Fixed": 1,
+        "Invisible": 1,
+        "Invulnerable": 1
+      }
+    }
+  }
+}

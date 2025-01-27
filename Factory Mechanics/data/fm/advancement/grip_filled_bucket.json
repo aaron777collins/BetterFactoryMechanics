@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:filled_bucket"
+    }
+  },
+  "rewards": {
+    "function": "fm:mechanical_grip/used"
+  }
+}

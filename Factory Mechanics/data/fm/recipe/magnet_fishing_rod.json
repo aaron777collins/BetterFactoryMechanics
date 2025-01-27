@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "F  ",
+    " R ",
+    " I "
+  ],
+  "key": {
+    "F": "minecraft:fishing_rod",
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "minecraft:fishing_rod",
+    "count": 1,
+    "components": {
+      "minecraft:item_model":"minecraft:magnet_fishing_rod",
+      "minecraft:item_name": "\"Magnet Fishing Rod\"",
+      "minecraft:lore": [
+        "{text: 'Factory Mechanics'}"
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ini",
+    "ini",
+    "RSR"
+  ],
+  "key": {
+    "i": "minecraft:iron_ingot",
+    "n": "minecraft:iron_nugget",
+    "S": "minecraft:stone_slab",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 1,
+    "components": {
+      "minecraft:lore": [
+        "{text: 'Factory Mechanics'}"
+      ],
+      "minecraft:item_model":"minecraft:mechanical_harvester",
+      "minecraft:item_name": "\"Harvester\"",
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Silent": 1,
+        "Tags": [
+          "Harvester"
+        ],
+        "Item": {
+          "id": "minecraft:item_frame",
+          "count": 1,
+          "components": {
+            "minecraft:item_model":"minecraft:mechanical_harvester"
+          }
+        },
+        "Fixed": 1,
+        "Invisible": 1,
+        "Invulnerable": 1
+      }
+    }
+  }
+}

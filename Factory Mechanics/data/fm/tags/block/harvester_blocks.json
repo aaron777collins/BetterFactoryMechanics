@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:leaves",
+    "#minecraft:dirt",
+    "#minecraft:cave_vines",
+    "#fm:crops",
+    "minecraft:sweet_berry_bush",
+    "minecraft:sculk",
+    "minecraft:cobweb",
+    "minecraft:pink_petals"
+  ]
+}

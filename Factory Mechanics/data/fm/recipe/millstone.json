@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " _ ",
+    "iRi"
+  ],
+  "key": {
+    "i": "minecraft:iron_ingot",
+    "_": "minecraft:stone_slab",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 1,
+    "components": {
+      "minecraft:lore": [
+        "{text: 'Factory Mechanics'}"
+      ],
+      "minecraft:item_model":"minecraft:millstone",
+      "minecraft:item_name": "\"Millstone\"",
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Silent": 1,
+        "Tags": [
+          "Millstone"
+        ],
+        "Fixed": 1,
+        "Invisible": 1
+      }
+    }
+  }
+}

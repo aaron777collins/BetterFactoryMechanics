@@ -1,0 +1,47 @@
+name: Release on push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Read VERSION
+        id: read_version
+        run: echo "version=$(cat VERSION)" >> $GITHUB_OUTPUT
+
+      - name: Generate timestamp build number
+        id: generate_build_number
+        run: |
+          # Example: 20250124100530
+          BUILD_NUMBER=$(date +%Y%m%d%H%M%S)
+          echo "build_number=$BUILD_NUMBER" >> $GITHUB_OUTPUT
+
+      - name: Zip the Factory Mechanics folder
+        run: zip -r betterfactorymechanics.zip "Factory Mechanics"
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        with:
+          tag_name: v${{ steps.read_version.outputs.version }}-${{ steps.generate_build_number.outputs.build_number }}
+          release_name: "v${{ steps.read_version.outputs.version }}-${{ steps.generate_build_number.outputs.build_number }}"
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload release asset
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: betterfactorymechanics.zip
+          asset_name: betterfactorymechanics.zip
+          asset_content_type: application/zip

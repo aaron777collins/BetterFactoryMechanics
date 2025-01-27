@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    "SRS"
+  ],
+  "key": {
+    "i": "minecraft:iron_ingot",
+    "S": "minecraft:stone",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 1,
+    "components": {
+      "minecraft:lore": [
+        "{text: 'Factory Mechanics'}"
+      ],
+      "minecraft:item_model":"minecraft:saw",
+      "minecraft:item_name": "\"Saw\"",
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Silent": 1,
+        "Tags": [
+          "Saw"
+        ],
+        "Item": {
+          "id": "minecraft:item_frame",
+          "count": 1,
+          "components": {
+            "minecraft:item_model":"minecraft:saw"
+          }
+        },
+        "Fixed": 1,
+        "Invisible": 1,
+        "Invulnerable": 1
+      }
+    }
+  }
+}

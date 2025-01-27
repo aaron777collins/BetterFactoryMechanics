@@ -1,0 +1,25 @@
+{
+	"type": "fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"weight": 70,
+					"name": "iron_nugget"
+				},
+				{
+					"type": "item",
+					"weight": 20,
+					"name": "raw_iron"
+				},
+				{
+					"type": "item",
+					"weight": 10,
+					"name": "iron_ingot"
+				}
+			]
+		}
+	]
+}

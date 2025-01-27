@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##O",
+    "IRL"
+  ],
+  "key": {
+    "#": "minecraft:piston",
+    "O": "#minecraft:planks",
+    "I": "minecraft:iron_nugget",
+    "R": "minecraft:redstone",
+    "L": "minecraft:lever"
+  },
+  "result": {
+    "id": "minecraft:paper",
+    "count": 1,
+    "components": {
+      "minecraft:lore": [
+        "{text: 'Factory Mechanics'}"
+      ],
+      "minecraft:item_model": "minecraft:mechanical_grip",
+      "minecraft:item_name": "\"Mechanical Grip\"",
+      "minecraft:max_stack_size": 1,
+      "minecraft:attribute_modifiers": [
+        {
+          "id": "block_interaction_range",
+          "type": "block_interaction_range",
+          "amount": 4,
+          "operation": "add_value"
+        },
+        {
+          "id": "entity_interaction_range",
+          "type": "entity_interaction_range",
+          "amount": 4,
+          "operation": "add_value"
+        }
+      ]
+    }
+  }
+}

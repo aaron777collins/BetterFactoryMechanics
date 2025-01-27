@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#fm:saw_base_blocks",
+    "#fm:wart_blocks",
+    "#fm:mushroom_blocks",
+    "#fm:saw_silk_touch_blocks"
+  ]
+}

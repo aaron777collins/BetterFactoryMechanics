@@ -1,0 +1,190 @@
+{
+	"type": "fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"weight": 3,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.9
+							},
+							"function": "minecraft:set_damage"
+						}
+					],
+					"name": "iron_sword"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.9
+							},
+							"function": "minecraft:set_damage"
+						}
+					],
+					"name": "iron_pickaxe"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.9
+							},
+							"function": "minecraft:set_damage"
+						}
+					],
+					"name": "iron_shovel"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.9
+							},
+							"function": "minecraft:set_damage"
+						}
+					],
+					"name": "iron_axe"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.9
+							},
+							"function": "minecraft:set_damage"
+						}
+					],
+					"name": "iron_hoe"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.9
+							},
+							"function": "minecraft:set_damage"
+						}
+					],
+					"name": "shears"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.9
+							},
+							"function": "minecraft:set_damage"
+						}
+					],
+					"name": "chainmail_helmet"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.9
+							},
+							"function": "minecraft:set_damage"
+						}
+					],
+					"name": "chainmail_chestplate"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.9
+							},
+							"function": "minecraft:set_damage"
+						}
+					],
+					"name": "chainmail_leggings"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.9
+							},
+							"function": "minecraft:set_damage"
+						}
+					],
+					"name": "chainmail_boots"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "compass"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "chain"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "iron_bars"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "tripwire_hook"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "water_bucket"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "minecart"
+				}
+			]
+		}
+	]
+}

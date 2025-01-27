@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/junk",
+          "weight": 10,
+          "quality": -2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/treasure",
+          "weight": 5,
+          "quality": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:fishing_hook",
+                  "in_open_water": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/fish",
+          "weight": 85,
+          "quality": -1
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "components": {
+                "minecraft:item_model": "minecraft:magnet_fishing_rod"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "fm:magnet_junk",
+          "weight": 10,
+          "quality": -2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fm:magnet_treasure",
+          "weight": 5,
+          "quality": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:fishing_hook",
+                  "in_open_water": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fm:magnet_iron",
+          "weight": 85,
+          "quality": -1
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "components": {
+              "minecraft:item_model": "minecraft:magnet_fishing_rod"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

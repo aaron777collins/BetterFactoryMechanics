@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    "CCC",
+    "CRC"
+  ],
+  "key": {
+    "C": "minecraft:cobblestone",
+    "i": "minecraft:iron_ingot",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "minecraft:item_frame",
+    "count": 1,
+    "components": {
+      "minecraft:lore": [
+        "{text: 'Factory Mechanics'}"
+      ],
+      "minecraft:item_model": "minecraft:press",
+      "minecraft:item_name": "\"Press\"",
+      "minecraft:entity_data": {
+        "id": "minecraft:item_frame",
+        "Silent": 1,
+        "Tags": [
+          "Press"
+        ],
+        "Fixed": 1,
+        "Invisible": 1
+      }
+    }
+  }
+}

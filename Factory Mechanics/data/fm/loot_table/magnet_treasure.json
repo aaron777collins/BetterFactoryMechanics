@@ -1,0 +1,290 @@
+{
+	"type": "fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"weight": 50,
+					"name": "iron_ore"
+				},
+				{
+					"type": "item",
+					"weight": 50,
+					"name": "chipped_anvil"
+				},
+				{
+					"type": "item",
+					"weight": 50,
+					"name": "damaged_anvil"
+				},
+				{
+					"type": "item",
+					"weight": 100,
+					"name": "name_tag"
+				},
+				{
+					"type": "item",
+					"weight": 100,
+					"name": "raw_iron_block"
+				},
+				{
+					"type": "item",
+					"weight": 100,
+					"name": "iron_block"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.8
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					],
+					"name": "iron_helmet"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.8
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					],
+					"name": "iron_chestplate"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.8
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					],
+					"name": "iron_leggings"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.8
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					],
+					"name": "iron_boots"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.8
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					],
+					"name": "shield"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.8
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					],
+					"name": "iron_pickaxe"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.8
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					],
+					"name": "iron_shovel"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.8
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					],
+					"name": "iron_axe"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.8
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					],
+					"name": "iron_hoe"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0,
+								"max": 0.8
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						}
+					],
+					"name": "iron_sword"
+				},
+				{
+					"type": "item",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"damage": {
+								"min": 0.5,
+								"max": 0.9
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": true
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_model": "minecraft:magnet_fishing_rod",
+								"minecraft:item_name": "{\"text\":\"Magnet Fishing Rod\"}",
+								"minecraft:lore": [
+									"{\"text\":\"SLT\\'s Factory Mechanics\"}"
+								]
+							}
+						}
+					],
+					"name": "fishing_rod"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"name": "heavy_weighted_pressure_plate"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"name": "iron_trapdoor"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"name": "hopper"
+				},
+				{
+					"type": "item",
+					"weight": 25,
+					"name": "cauldron"
+				}
+			]
+		}
+	]
+}

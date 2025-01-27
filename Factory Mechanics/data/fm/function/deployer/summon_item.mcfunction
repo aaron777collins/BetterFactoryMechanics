@@ -1,0 +1,1 @@
+$summon minecraft:item ^ ^ ^1.5 {Health:5s,PickupDelay:23s,Item:$(item)}

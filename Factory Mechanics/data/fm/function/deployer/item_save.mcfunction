@@ -1,0 +1,2 @@
+execute if score @s Item_Amount = 0 const run data remove block ~ ~ ~ Items[-1]
+execute unless score @s Item_Amount = 0 const store result block ~ ~ ~ Items[-1].count int 1 run scoreboard players get @s Item_Amount
