@@ -36,7 +36,6 @@ jobs:
 
       - name: Zip the Factory Mechanics folder
         run: |
-          # Use the gameversion output to name the zip
           zip -r "betterfactorymechanics_${{ steps.read_gameversion.outputs.gameversion }}.zip" "Factory Mechanics"
 
       - name: Create GitHub Release
@@ -56,4 +55,4 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: "betterfactorymechanics_${{ steps.read_gameversion.outputs.gameversion }}.zip"
           asset_name: "betterfactorymechanics_${{ steps.read_gameversion.outputs.gameversion }}.zip"
-          asset_content_type: "application/zip"
+          asset_content_type: application/zip
