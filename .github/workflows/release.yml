@@ -5,27 +5,28 @@ on:
     branches:
       - main
 
-# Important: Grant write permissions so the workflow can create releases
 permissions:
   contents: write
 
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      # If you also have a VERSION file for datapack version, you can read it here:
-      - name: Read datapack VERSION
+      - name: Read datapack version from VERSION
         id: read_dp_version
-        run: echo "version=$(cat VERSION)" >> $GITHUB_OUTPUT
+        run: |
+          DATAPACK_VERSION=$(cat VERSION)
+          echo "version=$DATAPACK_VERSION" >> $GITHUB_OUTPUT
 
-      # Read the GAMEVERSION file for the game version
       - name: Read GAMEVERSION
         id: read_gameversion
-        run: echo "gameversion=$(cat GAMEVERSION)" >> $GITHUB_OUTPUT
+        run: |
+          GAMEVERSION=$(cat GAMEVERSION)
+          echo "gameversion=$GAMEVERSION" >> $GITHUB_OUTPUT
 
       - name: Generate timestamp build number
         id: generate_build_number
@@ -33,28 +34,26 @@ jobs:
           BUILD_NUMBER=$(date +%Y%m%d%H%M%S)
           echo "build_number=$BUILD_NUMBER" >> $GITHUB_OUTPUT
 
-      # Zip the Factory Mechanics folder with _<GAMEVERSION> appended
       - name: Zip the Factory Mechanics folder
-        run: zip -r "betterfactorymechanics_${{ steps.read_gameversion.outputs.gameversion }}.zip" "Factory Mechanics"
+        run: |
+          # Use the gameversion output to name the zip
+          zip -r "betterfactorymechanics_${{ steps.read_gameversion.outputs.gameversion }}.zip" "Factory Mechanics"
 
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
         with:
-          # Use whatever version scheme you like for the tag. Example:
           tag_name: v${{ steps.read_dp_version.outputs.version }}-${{ steps.generate_build_number.outputs.build_number }}
           release_name: "v${{ steps.read_dp_version.outputs.version }}-${{ steps.generate_build_number.outputs.build_number }}"
           draft: false
           prerelease: false
         env:
-          # Use the default GitHub token (with write perms)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Upload the zip file as a release asset
       - name: Upload release asset
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: "betterfactorymechanics_${{ steps.read_gameversion.outputs.gameversion }}.zip"
           asset_name: "betterfactorymechanics_${{ steps.read_gameversion.outputs.gameversion }}.zip"
-          asset_content_type: application/zip
+          asset_content_type: "application/zip"
