@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+# Grant "contents: write" so we can create releases, upload assets, etc.
+permissions:
+  contents: write
+
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
@@ -20,7 +24,6 @@ jobs:
       - name: Generate timestamp build number
         id: generate_build_number
         run: |
-          # Example: 20250124100530
           BUILD_NUMBER=$(date +%Y%m%d%H%M%S)
           echo "build_number=$BUILD_NUMBER" >> $GITHUB_OUTPUT
 
